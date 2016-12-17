@@ -1,2 +1,9 @@
 # andriawan.github.io
-My Live Blog
+My Personal Life Blog
+
+Tells about:
+
+- My Programming Experience
+- My Story of Life
+- Tips
+- My Portofolio
