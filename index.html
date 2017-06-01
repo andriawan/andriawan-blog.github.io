@@ -1,28 +1,89 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Welcome to My Headquartes</title>
+		<title>Welcome to My Personal Webpage</title>
+		<!-- Meta -->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="css/style.css">
 	</head>
 	<body>
-		<nav>
-    		<ul>
+	<!-- Semantic Markup -->
+		<!-- Header -->
+		<header class="masthead" role="banner">
+			<div class="logo">Mastering RWD with HTML5 &amp; CSS3</div>
+			<div class="search" role="search">
+				<form action="" method="" accept-charset="utf-8">
+					<label>
+						<input type="text" name="field" class="field">
+						<button>Search Now!</button>
+					</label>					
+				</form>
+			</div>
+		</header>
+		<!-- Navigation -->
+		<nav class="main-nav" role="navigation">
+    		<ul class="nav-container">
         		<li><a href="/">Home</a></li>
 	        	<li><a href="/about">About</a></li>
         		<li><a href="/cv">CV</a></li>
         		<li><a href="/blog">Blog</a></li>
     		</ul>
 		</nav>
-		<div class="container">
-    		<div class="blurb">
-        		<h1>Hi there, I'm Hank Quinlan!</h1>
-				<p>I'm best known as the horrible cop from <em>A Touch of Evil</em> Don't trust me. <a href="/about">Read more about my life...</a></p>
-    		</div><!-- /.blurb -->
-		</div><!-- /.container -->
-		<footer>
-    		<ul>
-        		<li><a href="mailto:andriawan2014@gmail.com">email</a></li>
-        		<li><a href="https://github.com/andriawan">github.com/andriawan</a></li>
-			</ul>
-		</footer>
+		<!-- Main -->
+		<main class="main-container" role="main">
+			<!-- Article -->
+			<article class="article-container flex-container">
+				<!-- Section -->
+				<section class="main-content">
+					<!-- Header -->
+					<header>
+						<h1>The <code>&lt;main</code> element </h1>
+					</header>
+					<p>as per the MDN definition</p>
+					<blockquote>
+						<p>The Html main element (<code>&lt;main</code>)
+							represents &hellip;
+						</p>
+					</blockquote>
+				</section>
+				<!-- Aside -->
+				<aside class="side-content">
+					<h2>What does semantic HTML mean?</h2>
+					<p>Semantic markup basically means that we use HTML tags to describe what specific content is.</p>
+				</aside>
+			</article>
+			<!-- Contact Form -->
+			<div class="contact-form" role="form">
+				<header>
+					<h2>Have Questions About HTML5?</h2>
+				</header>
+				<form>
+					<div class="flex-container">
+						<label class="label-col">Name: <input type="text"
+						class="field name" id="name"
+						required></label>
+						<label class="label-col">Email: <input type="email"
+						class="field email" id="email" required></label>
+					</div>
+					<label for="comments">Comments:</label>
+					<textarea class="comments" id="comments" cols="50"
+					required></textarea>
+					<button>Send Question!</button>
+				</form>
+			</div>
+			<!-- Footer -->
+			<footer class="main-footer" role="contentinfo">
+				<p>Copyright &copy;</p>
+				<ul class="nav-container" role="navigation">
+				<li><a href="#">Footer Link 1</a></li>
+				<li><a href="#">Footer Link 2</a></li>
+				<li><a href="#">Footer Link 3</a></li>
+				<li><a href="mailto:andriawan2014@gmail.com">email</a></li>
+        		<li><a href="https://github.com/andriawan">github</a></li>
+				</ul>
+			</footer>
+		</main>
 	</body>
 </html>
