@@ -2,14 +2,21 @@
 <html>
 	<head>
 		<title>Welcome to My Personal Webpage</title>
-		<!-- Meta -->
+		<!-- Meta Viewport for Zooming web in mobile mode-->
 		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- IE backward compatible -->
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<!-- utf for displaying rich characters -->
 		<meta charset="utf-8">
+		<!-- Normalize css cross browsers -->
+		<link rel="stylesheet" href="css/normalize.css">
+		<!-- Main Style -->
 		<link rel="stylesheet" href="css/style.css">
 	</head>
 	<body>
+	
 	<!-- Semantic Markup -->
+
 		<!-- Header -->
 		<header class="masthead" role="banner">
 			<div class="logo">Mastering RWD with HTML5 &amp; CSS3</div>
@@ -22,6 +29,7 @@
 				</form>
 			</div>
 		</header>
+
 		<!-- Navigation -->
 		<nav class="main-nav" role="navigation">
     		<ul class="nav-container">
@@ -31,6 +39,7 @@
         		<li><a href="/blog">Blog</a></li>
     		</ul>
 		</nav>
+
 		<!-- Main -->
 		<main class="main-container" role="main">
 			<!-- Article -->
@@ -85,5 +94,8 @@
 				</ul>
 			</footer>
 		</main>
+
+		<!-- Place for js files -->
+		<script src="js/respond.min.js"></script>
 	</body>
 </html>
