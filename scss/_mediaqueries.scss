@@ -1,0 +1,24 @@
+//Mobile First
+@mixin minw($point){
+	@if $point == 320{
+		@media (min-width: 20 em) { @content;}
+	}
+
+	@if $point == 640{
+		@media (min-width: 40 em) { @content;}
+	}
+
+	@if $point == 768{
+		@media (min-width: 47.5 em) { @content;}
+	}
+}
+
+//Media Query Mixin - Desktop-first
+@mixin forSmallScreens($media) {
+	@media (max-width: $media/16+em) { @content; }
+}
+
+//Media Query Mixin - Desktop-first px mode
+@mixin forSmallScreensPixel($media) {
+	@media (max-width: $media) { @content; }
+}
