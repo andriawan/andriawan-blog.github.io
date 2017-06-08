@@ -1,0 +1,152 @@
+*, *:before, *:after {
+	box-sizing: border-box;
+}
+
+html{
+	font-family: sans-serif;
+	box-sizing:  border-box;
+}
+
+main{
+	padding-left: 25%;
+}
+
+header h1{
+	color: #1b718e;
+}
+
+.container{
+	max-width: 768px;
+	margin: auto
+}
+
+nav{
+	margin-left: -25%; 
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	width: 25%;
+	background: linear-gradient(to bottom , #1781bb, #1fec93)
+}
+
+.face{
+	width: 200px;
+	height: auto;
+}
+
+.thumb{
+	height: auto;
+	position: relative;
+	top: 50%;
+  	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 100px;
+    height: 100px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+}
+
+.single-post{
+	min-height: 350px;
+	border-width: 4px;
+	border-color: #18adfd;
+	border-radius: 10px;
+	margin-bottom: 50px;
+	box-shadow: grey 0px 3px 20px 0px;
+}
+
+.single-post section p{
+	padding: 10px 20px 20px;
+    font-size: 20px;
+	color: rgba(0,0,0,.8);
+	line-height: 1.5;
+}
+
+.post-header{
+	background: linear-gradient(to right , #18adfd, #1fec93);
+	border-radius: 10px 10px 0 0;
+	border-bottom: 2px;
+    border-bottom-color: #12ffcf;
+    border-bottom-style: solid;
+    border-bottom-width: 4px;
+}
+
+.post-header h1{
+	color: white;
+	margin: 0;
+	padding: 20px 20px 0;
+}
+
+.post-header h4{
+	margin: 0;
+	padding: 10px 20px 0px;
+	color: #0d6f92;
+}
+
+.post-header h3{
+	margin: 10px 0 10px 20px;
+    display: inline-block;
+    color: #f9fdff;
+    background: #1d8c94;
+    padding: 5px 15px 5px 15px;
+    border-radius: 31px;
+}
+
+.center{
+	text-align: center;
+	position: relative;
+	top: 50%;
+  	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.center h1{
+	text-align: center;
+	margin-bottom: 5px;
+	color: rgb(255, 255, 255);
+}
+
+.center p{
+	color: #227394;
+}
+
+.center img{
+	width: 150px;
+	height: 150px;
+}
+
+.center span img{
+	width: 80px;
+	height: auto;
+}
+
+
+.box{
+	padding: 1em
+}
+
+.pure-img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+
+.banner{
+	width: 100%; 
+	height: auto;
+	max-height: 400px; 
+	background-size: cover; 
+	background-repeat: no-repeat; 
+	border-radius: 0px;
+}
+
+img {
+	border: 0;
+}
+
+footer{
+	min-height: 200px;
+	background: #18adfd
+}

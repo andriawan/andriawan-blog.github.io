@@ -4,13 +4,13 @@
 
 .container_12 {
   width: 980px;
-  padding: 0 10px;
+  padding: 0 1.04%;
   margin: auto;
 }
 
 .grid_1, .grid_2, .grid_3, .grid_4, .grid_5, .grid_6, .grid_7, .grid_8, .grid_9, .grid_10, .grid_11, .grid_12 {
   float: left;
-  margin: 0 10px;
+  margin: 0 1.04%;
 }
 
 @media (max-width: 980px) {
@@ -41,7 +41,7 @@
   width: 140px;
 }
 .container_12 .grid_3 {
-  width: 220px;
+  width: 22.91%;
 }
 @media (max-width: 980px) {
   .container_12 .grid_3 {
@@ -69,7 +69,7 @@
   width: 620px;
 }
 .container_12 .grid_9 {
-  width: 700px;
+  width: 72.91%;
 }
 @media (max-width: 980px) {
   .container_12 .grid_9 {
@@ -88,7 +88,7 @@
   width: 860px;
 }
 .container_12 .grid_12 {
-  width: 940px;
+  width: 97.91%;
 }
 @media (max-width: 980px) {
   .container_12 .grid_12 {
@@ -98,6 +98,11 @@
 @media (max-width: 768px) {
   .container_12 .grid_12 {
     width: 600px;
+  }
+}
+@media (max-width: 640px) {
+  .container_12 .grid_3, .container_12 .grid_9 {
+    width: 97.91%;
   }
 }
 @media (max-width: 640px) {

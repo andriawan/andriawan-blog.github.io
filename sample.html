@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>AndGrid</title>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	    <link rel="stylesheet" href="css/normalize.css">
+	    <link rel="stylesheet" href="css/and.css">
+	    <style type="text/css" media="screen">
+	    	.black {
+	    		min-height: 100px;
+	    		background: #6A6A6A;
+	    	}
+
+	    	.orange{
+	    		min-height: 100px;
+	    		background: orange; 
+	    	}
+
+	    	.grey{
+	    		min-height: 100px;
+	    		background: grey;
+	    	}
+	    </style>
+	    <!--[if lt IE 9]>
+			<script src="//html5shiv.googlecode.com/svn/trunk/html5.js">
+		<	/script>
+		<![endif]-->
+	</head>
+	<body>
+		<h1>Basic Layout Using a Custom CSS Grid</h1>
+		<main class="and-fluid" role="main">
+		<header id="header" class="and-container" role="banner">
+		</header><!-- /header -->
+		<nav class="and-grid-4 grey" role="navigation"> Nav (.grid-4)</nav>
+		<section class="and-fluid">
+			<div class="row">
+				<div class="grid_6 black">.grid-6</div>
+				<div class="grid_6 black">.grid-6</div>
+				<div class="grid_6 black">.grid-6</div>
+				<div class="grid_6 black">.grid-6</div>
+				<div class="grid_6 black">.grid-6</div>
+				<div class="grid_6 black">.grid-6</div>
+				<div class="grid_6 black">.grid-6</div>
+			</div>
+		</section>
+			
+		</main>
+	</body>
+</html>

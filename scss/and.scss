@@ -1,0 +1,121 @@
+// menentukan charset agar browser mengenali karakter dengan maksimal
+@charset "UTF-8";
+
+/* 
+	AndCSS (my Own CSS Framework)
+	Structure : Mobile First (min-width)
+	Syntax : SCSS
+	Created by : Andriawan
+	Date : 4 Juni 2017
+
+ */
+
+*, *:before, *:after {
+	box-sizing: border-box;
+}
+
+//Mobile-First Media Queries Mixin
+@mixin forLargeScreens($width) {
+	@media (min-width: $width+px) { @content;}
+}
+
+@mixin forSmartphones($width) {
+	@media (max-width: $width+px) { @content;}
+}
+
+//Main Container
+.and-container {
+	width: 100%;
+	max-width: 1200px;
+	padding: 0 1.67%;
+	margin: auto;
+
+	.and-grid {
+	&-1 { width : 6.67%; } // formula (80px/1200px) x 100%
+	&-2 { width : 15%; } // formula (((80x2)+ 20px)/1200px) x 100%
+	&-3 { width : 23.33%; }
+	&-4 { width : 31.67%; }
+	&-5 { width : 40%; }
+	&-6 { width : 48.33%; }
+	&-7 { width : 56.67%; }
+	&-8 { width : 65%; } 
+	&-9 { width : 73.33%; }
+	&-10 { width : 81.67%; }
+	&-11 { width : 90%; }
+	&-12 { width : 98.33%; }
+	}
+}
+
+//Fluid Container
+.and-fluid{
+	width: 100%;
+	clear: both;
+}
+
+//Grid
+
+//Grid 12 Column
+ 		// 1 column = 80px, context width = 1200px, gutter = 20px
+.and-grid {
+	&-1 { width : 6.67%; } // formula (80px/1200px) x 100%
+	&-2 { width : 15%; } // formula (((80x2)+ 20px)/1200px) x 100%
+	&-3 { width : 23.33%; }
+	&-4 { width : 31.67%; }
+	&-5 { width : 40%; }
+	&-6 { width : 48.33%; }
+	&-7 { width : 56.67%; }
+	&-8 { width : 65%; } 
+	&-9 { width : 73.33%; }
+	&-10 { width : 81.67%; }
+	&-11 { width : 90%; }
+	&-12 { width : 98.33%; }
+}
+
+.and-grid {
+	//global properties - Mobile-First
+
+	@include forSmartphones(480){
+		&-1, &-2, &-3, &-4, &-5, &-6, &-7, &-8, &-9, &-10, &-11, &-12 {
+		width: 100%;
+		}
+	}
+
+
+	@include forLargeScreens(640) { //Totally arbitrary width, it's only a starting point. //Global Properties - Large screens
+		&-1, &-2, &-3, &-4, &-5, &-6, &-7, &-8, &-9, &-10, &-11, &-12 {
+		float: left;
+		margin: 0 .83%;
+		}
+	}
+}
+
+
+//Clear Floated Elements - http://davidwalsh.name/css-clear-fix
+.clear, .row {
+	&:before,
+	&:after { content: ''; display: table; }
+	&:after { clear: both; }
+}
+//Use rows to nest containers
+.row { margin-bottom: 10px;
+	&:last-of-type { margin-bottom: 0; }
+}
+//Legacy IE
+.clear { zoom: 1; }
+
+/* Centering things */
+.cover{
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	z-index: 1;
+
+	.center{
+		position: relative;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%)
+	}
+}

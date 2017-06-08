@@ -1,0 +1,145 @@
+/* 
+	AndCSS (my Own CSS Framework)
+	Structure : Mobile First (min-width)
+	Syntax : SCSS
+	Created by : Andriawan
+	Date : 4 Juni 2017
+
+ */
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+.and-container {
+  width: 100%;
+  max-width: 1200px;
+  padding: 0 1.67%;
+  margin: auto;
+}
+.and-container .and-grid-1 {
+  width: 6.67%;
+}
+.and-container .and-grid-2 {
+  width: 15%;
+}
+.and-container .and-grid-3 {
+  width: 23.33%;
+}
+.and-container .and-grid-4 {
+  width: 31.67%;
+}
+.and-container .and-grid-5 {
+  width: 40%;
+}
+.and-container .and-grid-6 {
+  width: 48.33%;
+}
+.and-container .and-grid-7 {
+  width: 56.67%;
+}
+.and-container .and-grid-8 {
+  width: 65%;
+}
+.and-container .and-grid-9 {
+  width: 73.33%;
+}
+.and-container .and-grid-10 {
+  width: 81.67%;
+}
+.and-container .and-grid-11 {
+  width: 90%;
+}
+.and-container .and-grid-12 {
+  width: 98.33%;
+}
+
+.and-fluid {
+  width: 100%;
+  clear: both;
+}
+
+.and-grid-1 {
+  width: 6.67%;
+}
+.and-grid-2 {
+  width: 15%;
+}
+.and-grid-3 {
+  width: 23.33%;
+}
+.and-grid-4 {
+  width: 31.67%;
+}
+.and-grid-5 {
+  width: 40%;
+}
+.and-grid-6 {
+  width: 48.33%;
+}
+.and-grid-7 {
+  width: 56.67%;
+}
+.and-grid-8 {
+  width: 65%;
+}
+.and-grid-9 {
+  width: 73.33%;
+}
+.and-grid-10 {
+  width: 81.67%;
+}
+.and-grid-11 {
+  width: 90%;
+}
+.and-grid-12 {
+  width: 98.33%;
+}
+
+@media (max-width: 480px) {
+  .and-grid-1, .and-grid-2, .and-grid-3, .and-grid-4, .and-grid-5, .and-grid-6, .and-grid-7, .and-grid-8, .and-grid-9, .and-grid-10, .and-grid-11, .and-grid-12 {
+    width: 100%;
+  }
+}
+@media (min-width: 640px) {
+  .and-grid-1, .and-grid-2, .and-grid-3, .and-grid-4, .and-grid-5, .and-grid-6, .and-grid-7, .and-grid-8, .and-grid-9, .and-grid-10, .and-grid-11, .and-grid-12 {
+    float: left;
+    margin: 0 .83%;
+  }
+}
+
+.clear:before, .clear:after, .row:before, .row:after {
+  content: '';
+  display: table;
+}
+.clear:after, .row:after {
+  clear: both;
+}
+
+.row {
+  margin-bottom: 10px;
+}
+.row:last-of-type {
+  margin-bottom: 0;
+}
+
+.clear {
+  zoom: 1;
+}
+
+/* Centering things */
+.cover {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+.cover .center {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/*# sourceMappingURL=and.css.map */
